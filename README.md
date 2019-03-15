@@ -24,6 +24,6 @@ Please see <a href="http://www.earlywarningproject.com/2015/03/19/data-sources">
 
 ## Author
 
-This project was designed and built by Drew Leonard. He is an undergraduate at Dartmouth College, working through the Government Department and John Sloan Dickey Center for International Understanding.
+This project was designed and built by Drew Leonard & Billy McGrath. They are undergraduates at Dartmouth College, working through the Government Department and John Sloan Dickey Center for International Understanding.
 
 Please view the progress of this project in its GitHub repository, and send inquiries to drew.n.leonard.19@dartmouth.edu.
