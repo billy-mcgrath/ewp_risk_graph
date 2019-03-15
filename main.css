@@ -1,0 +1,337 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    background-color: #fdf6e3;
+}
+
+.container {
+    padding: 20px 50px 5px 30px;
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    min-width: 1190px;
+    max-width: 1600px;
+}
+
+.loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fdf6e3 url('grid.svg') no-repeat center center;
+}
+
+.error {
+    position: relative;
+    z-index: 700;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 30px;
+    color: #268bd2;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #eee8d5;
+    clear: both;
+    margin: 0 auto;
+}
+
+.titleWrapper {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.titleLeft {
+    float: left;
+}
+
+.titleRight {
+    padding: 0 5px 5px 30px;
+    float: left;
+}
+
+.title {
+    margin: 0;
+}
+
+.title.main {
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 1px solid #586e75;
+    display: inline;
+    color: #dc322f;
+}
+
+.title.sub {
+    padding-top: 11px;
+    font-weight: 400;
+    font-size: 10px;
+    color: #586e75;
+}
+
+.subTitleFloat {
+    display: block;
+    float: right;
+    font-size: 10px;
+    font-weight: 400;
+    color: #586e75;
+    font-style: italic;
+}
+
+.subTitleFloatHover:hover {
+    color: #268bd2;
+}
+
+.buttonContainer {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.sliderTtipContainer {
+    float: left;
+}
+
+.buttonTextContainer {
+    float: left;
+    margin-left: 20px;
+    width: 95%;
+}
+
+.buttonText {
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+    margin-right: 30px;
+    font-size: 13px;
+    margin-top: 0;
+    font-style: italic;
+    vertical-align: middle;
+    color: #586e75;
+}
+
+.buttonButtonContainer {
+    float: left;
+}
+
+.button {
+    width: 90px;
+    cursor: pointer;
+    font-size: 12px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    border-radius: 3px;
+    margin: 10px 6px 10px 0;
+    text-align: center;
+    position: relative;
+    opacity: 95%;
+    border-radius: 3px;
+    padding: 5px;
+    color: #586e75;
+    background-color: #eee8d5
+}
+
+.button:hover {
+    background: #fdf6e3;
+}
+
+.button.current {
+    background: #586e75;
+    color: #eee8d5;
+}
+
+.sliderTtip {
+    display: inline-block;
+    float: left;
+    width: 75px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    position: relative;
+    opacity: 95%;
+    border-radius: 3px;
+    padding: 5px;
+    color: #586e75;
+    background-color: #eee8d5;
+    border: 1px solid #D9D9D9;
+}
+
+.sliderContainer {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.sliderText {
+    float: left;
+    font-weight: 300;
+    margin-right: 30px;
+    font-size: 13px;
+    margin-top: 0;
+    font-style: italic;
+    color: #586e75;
+}
+
+.sliderWrapper {
+    float: left;
+}
+
+.headerWrapper {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.headerOneWrapper {
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid #586e75;
+    color: #586e75;
+}
+
+.headerTwoWrapper {
+    float: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 1px solid #586e75;
+    margin-left: 20px;
+    color: #586e75;
+}
+
+.chartWrapper {
+    width: 100%;
+    clear: both;
+}
+
+.chartOne {
+    width: 50%;
+    margin-top: 10px;
+    float: left;
+}
+
+.chartTwo {
+    width: 50%;
+    /*height: 50%;*/
+    margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+}
+
+.searchBar {
+    float: left;
+    display: inline;
+    width: 400px;
+
+    border-radius: 2px;
+    height: 30px;
+    outline: none;
+    background-color: #eee8d5;
+}
+
+input[type=search] {
+    font-size: 14px;
+    height: 30px;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 25px;
+    color: #586e75;
+    border: 1px solid #D9D9D9;
+}
+
+.searchButton {
+    float: left;
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 8px 8px 6px 8px;
+    letter-spacing: 0.1em;
+    align-self: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: #eee8d5;
+    color: #586e75;
+}
+
+.ttip {
+    width: 300px;
+    position: relative;
+    background-color: #fdf6e3;
+    display: none;
+    border: 3px solid #586e75;
+    padding: 5px;
+    color: #586e75;
+}
+
+.title br {
+    margin-top: 0;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-top: 7.5px;
+}
+
+p.ttipPrimary {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    border-bottom: 2px solid currentcolor;
+}
+
+p.ttipSecondary {
+    font-size: 12px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #848482;
+}
+
+p.ttipTertiary {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+p.ttipPrimaryOne {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    color: #dc322f;
+}
+
+span.ttipSecondaryOne {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #586e75;
+}
+
+p.ttipTertiaryOne {
+    font-size: 13px;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #586e75;
+}
+
+.xAxis line,
+path {
+    stroke: #586e75;
+}
+
+.xAxis text {
+    fill: #586e75;
+}
